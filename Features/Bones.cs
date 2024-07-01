@@ -68,19 +68,25 @@ internal static class Bones
 
 	public static readonly List<string[]> Connections =
 	[
-		[Pelvis, LThigh1], [LThigh1, LThigh2], [LThigh2, LCalf], [LCalf, LFoot], [LFoot, LToe], [Pelvis, RThigh1], [RThigh1, RThigh2], [RThigh2, RCalf],
-		[RCalf, RFoot], [RFoot, RToe], [Pelvis, Spine1], [Spine1, Spine2], [Spine2, Spine3], [Spine3, Neck], [Neck, Head], [Spine3, LCollarbone],
-		[LCollarbone, LForearm1], [LForearm1, LForearm2], [LForearm2, LForearm3], [LForearm3, LPalm], [Spine3, RCollarbone],
-		[RCollarbone, RForearm1], [RForearm1, RForearm2], [RForearm2, RForearm3], [RForearm3, RPalm] 
+		[Pelvis, LThigh1], [LThigh1, LThigh2], [LThigh2, LCalf], [LCalf, LFoot], [LFoot, LToe], 
+		[Pelvis, RThigh1], [RThigh1, RThigh2], [RThigh2, RCalf], [RCalf, RFoot], [RFoot, RToe], 
+		[Pelvis, Spine1], [Spine1, Spine2], [Spine2, Spine3], [Spine3, Neck], [Neck, Head], 
+		[Spine3, LCollarbone], [LCollarbone, LForearm1], [LForearm1, LForearm2], [LForearm2, LForearm3], [LForearm3, LPalm], 
+		[Spine3, RCollarbone], [RCollarbone, RForearm1], [RForearm1, RForearm2], [RForearm2, RForearm3], [RForearm3, RPalm] 
 	];
 
 	public static readonly List<string[]> FingerConnections =
 	[
-		[LPalm, LDigit11], [LDigit11, LDigit12], [LDigit12, LDigit13], [LPalm, LDigit21], [LDigit21, LDigit22], [LDigit22, LDigit23], [LPalm, LDigit31],
-		[LDigit31, LDigit32], [LDigit32, LDigit33], [LPalm, LDigit41], [LDigit41, LDigit42], [LDigit42, LDigit43], [LPalm, LDigit51], [LDigit51, LDigit52],
-		[LDigit52, LDigit53], [RPalm, RDigit11], [RDigit11, RDigit12],	[RDigit12, RDigit13], [RPalm, RDigit11], [RDigit21, RDigit22], [RDigit22, RDigit23],
-		[RPalm, RDigit11], [RDigit31, RDigit32], [RDigit32, RDigit33],	[RPalm, RDigit11], [RDigit41, RDigit42], [RDigit42, RDigit43], [RPalm, RDigit11],
-		[RDigit51, RDigit52], [RDigit52, RDigit53]
+		[LPalm, LDigit11], [LDigit11, LDigit12], [LDigit12, LDigit13], 
+		[LPalm, LDigit21], [LDigit21, LDigit22], [LDigit22, LDigit23], 
+		[LPalm, LDigit31], [LDigit31, LDigit32], [LDigit32, LDigit33], 
+		[LPalm, LDigit41], [LDigit41, LDigit42], [LDigit42, LDigit43], 
+		[LPalm, LDigit51], [LDigit51, LDigit52], [LDigit52, LDigit53], 
+		[RPalm, RDigit11], [RDigit11, RDigit12], [RDigit12, RDigit13], 
+		[RPalm, RDigit21], [RDigit21, RDigit22], [RDigit22, RDigit23],
+		[RPalm, RDigit31], [RDigit31, RDigit32], [RDigit32, RDigit33],	
+		[RPalm, RDigit41], [RDigit41, RDigit42], [RDigit42, RDigit43], 
+		[RPalm, RDigit51], [RDigit51, RDigit52], [RDigit52, RDigit53]
 	];
 
 	private static Vector2 GetScreenPosition(Camera camera, Vector3 position, bool isAiming)
